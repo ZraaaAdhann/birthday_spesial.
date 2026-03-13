@@ -1,0 +1,1034 @@
+body{
+  margin:0;
+  width:100vw;
+  height:100vh;
+  overflow:hidden;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  background:
+    linear-gradient(#dddddd 1px, transparent 1px),
+    linear-gradient(90deg, #dddddd 1px, transparent 1px),
+    #ffffff;
+  background-size: 40px 40px;
+}
+
+/* SLIDER */
+.slider{
+  width:100vw;
+  height:100vh;
+  position:relative;
+  overflow:hidden;
+}
+
+/* SLIDE */
+.slide{
+  width:100vw;
+  height:100vh;
+  position:absolute;
+  top:0;
+  left:0;
+  overflow:hidden;
+
+  opacity:0;
+  transform: scale(1.15);
+  filter: blur(10px);
+
+  transition: all 1.2s cubic-bezier(.77,0,.18,1);
+  pointer-events:none;
+}
+
+.slide.active{
+  opacity:1;
+  transform: scale(1);
+  filter: blur(0);
+  pointer-events:auto;
+  z-index:10;
+}
+
+
+
+/* BANNER */
+.banner{
+  position:absolute;
+  top:0;
+  left:0;
+  width:28%;
+}
+
+.banner1{
+  position:absolute;
+  top:0;
+  left:350px;
+  width:28%;
+}
+
+.banner2{
+  position:absolute;
+  top:0;
+  left:700px;
+  width:28%;
+}
+
+.banner3{
+  position:absolute;
+  top:0;
+  right:-130px;
+  width:28%;
+}
+
+/* TEXT */
+.center-text{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+  z-index:50;
+}
+
+h1{
+  font-family:'Luckiest Guy', cursive;
+  font-size:90px;
+  line-height:0.9;
+  margin:0;
+  color:black;
+  letter-spacing:2px;
+  text-shadow:
+    -4px -4px 0 white,
+     4px -4px 0 white,
+    -4px  4px 0 white,
+     4px  4px 0 white;
+}
+
+button{
+  margin-top:20px;
+  padding:12px 28px;
+  border-radius:30px;
+  border:2px solid black;
+  background:white;
+  font-size:16px;
+  cursor:pointer;
+  position:relative;
+  z-index:60;
+}
+
+/* CHARACTERS */
+.char{
+  position:absolute;
+  width:300px;
+}
+
+.left{
+  left:40px;
+  bottom:50px;
+}
+
+.bottom{
+  bottom:0;
+  left:38%;
+  transform:translateX(-50%);
+  width:210px;
+}
+
+.right{
+  right:0;
+  bottom:-30px;
+  width:240px;
+  transform:rotate(-20deg) scaleX(-1);
+}
+
+.right2{
+  right:40px;
+  bottom:230px;
+}
+
+/* ===== SLIDE 2 ===== */
+.sweet{
+  text-align:center;
+  font-size:60px;
+  margin-top:40px;
+}
+
+.banners2{
+  position:absolute;
+  bottom: 450px;
+  left:-30px;
+  width:28%;
+  transform:rotate(-30deg) scaleX(-1);
+}
+
+.banners3{
+  position:absolute;
+  bottom: 450px;
+  right:-30px;
+  width:28%;
+  transform:rotate(30deg) scaleX(-1);
+}
+
+.kirian{
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  bottom: -30px;
+}
+
+.kananft{
+  position: absolute;
+  right: 215px;
+  width: 200px;
+  top: 105px;
+  transform:rotate(55deg) scaleX(-1);
+}
+
+.kananan{
+  position: absolute;
+  right: -10px;
+  width: 430px;
+  bottom: -20px;
+}
+
+.photo-wrap{
+  display:flex;
+  justify-content:center;
+  gap:80px;
+  margin-top:80px;
+}
+
+.photo{
+  text-align:center;
+}
+
+.photo img{
+  width:250px;
+  height:250px;
+  object-fit:cover;
+  border-radius:50%;
+}
+
+.photo p{
+  max-width:250px;
+  margin-top:15px;
+  font-size:16px;
+}
+
+.next-btn{
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:50;
+}
+
+/* ==== SLIDE 3 ==== */
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+#slide3 {
+  position: relative;
+  padding-right: 50px;
+}
+
+
+.foto-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foto-style {
+  position: absolute;
+  right: 125px;
+  bottom: 170px;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 150px 150px 0 0;
+  border: 5px solid white;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  pointer-events: auto;
+}
+
+.wish-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-60%, -50%); /* Menaruh tepat di tengah-tengah */
+  width: 450px; /* Atur lebar teks agar tidak menabrak foto */
+  text-align: center;
+  z-index: 100; /* Pastikan di atas background */
+  pointer-events: auto; /* Agar teks bisa di-copy atau di-scroll */
+}
+
+.nama-ultahun{
+  font-family: 'Allura', cursive;
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.nama-ultah{
+  font-family: 'Allura', cursive;
+  font-size: 70px;
+  margin-bottom: 10px;
+  color: #333;
+  opacity:0;
+  transform:translateY(25px) scale(.95);
+  transition:all .8s cubic-bezier(.22,.61,.36,1);
+}
+
+.nama-ultah.show{
+  opacity:1;
+  transform:translateY(0) scale(1);
+}
+
+.cursor{
+  display:inline-block;
+  margin-left:4px;
+  animation:blink 1s infinite;
+  font-weight:bold;
+}
+
+@keyframes blink{
+  0%{opacity:1;}
+  50%{opacity:0;}
+  100%{opacity:1;}
+}
+
+
+.p-ucapan {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  background: rgba(255, 255, 255, 0.6); /* Background tipis agar teks mudah dibaca */
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.char4{
+  position: absolute;
+ right: 50px;
+ bottom: 470px;
+ width: 170px;
+transform:rotate(49deg) scaleX(-1);
+}
+
+.char5{
+  position: absolute;
+  left: 0px;
+  bottom: 70px;
+  width: 500px;
+}
+
+.char6{
+  position: absolute;
+  bottom: 450px;
+  right: 400px;
+  width: 150px;
+  transform: rotate(20deg) scale(1);
+}
+
+.next-center{
+  position: absolute;
+  left: 50%;
+  bottom: -100x;          /* naik turun: kecil = turun, besar = naik */
+  transform: translateX(-50%);
+  
+  padding:12px 28px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff7eb3;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 6px 15px rgba(0,0,0,.2);
+  transition:.3s;
+
+  z-index: 1;
+}
+
+.typing{
+  border-right:3px solid #ff4da6;
+  padding-right:6px;
+  animation:blink .8s infinite;
+  white-space:pre-wrap;
+}
+
+@keyframes blink{
+  0%{border-color:transparent}
+  50%{border-color:#ff4da6}
+  100%{border-color:transparent}
+}
+
+
+/* ==== PAP SLIDE (RAPIH GRID) ==== */
+.pap-wrap{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap:25px;
+  z-index:50;
+}
+
+/* FOTO */
+.pap{
+  width:140px;
+  height:190px;
+  object-fit:cover;
+  border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+  opacity:0;
+  transform:scale(0.6);
+  animation: papPop .6s ease forwards;
+}
+
+/* DELAY SATU-SATU */
+.pap:nth-child(1){ animation-delay:.2s; }
+.pap:nth-child(2){ animation-delay:.4s; }
+.pap:nth-child(3){ animation-delay:.6s; }
+.pap:nth-child(4){ animation-delay:.8s; }
+.pap:nth-child(5){ animation-delay:1s; }
+.pap:nth-child(6){ animation-delay:1.2s; }
+.pap:nth-child(7){ animation-delay:1.4s; }
+.pap:nth-child(8){ animation-delay:1.6s; }
+.pap:nth-child(9){ animation-delay:1.8s; }
+.pap:nth-child(10){ animation-delay:2s; }
+
+/* ANIMASI TIMBUL */
+@keyframes papPop{
+  from{
+    opacity:0;
+    transform:scale(.6);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+/* RESET SAAT SLIDE BELUM AKTIF */
+.slide:not(.active) .pap{
+  animation:none;
+  opacity:0;
+  transform:scale(.6);
+}
+
+.next-btn{
+  position:absolute;
+  bottom:40px;
+  left:50%;
+  transform:translateX(-50%);
+  padding:12px 28px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff7eb3;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 6px 15px rgba(0,0,0,.2);
+  transition:.3s;
+}
+
+.next-tmbl{
+  position:absolute;
+  bottom:40px;
+  left:650px;
+  transform:translateX(-50%);
+  padding:12px 28px;
+  font-size:18px;
+  border:none;
+  border-radius:30px;
+  background:#ff7eb3;
+  color:white;
+  cursor:pointer;
+  box-shadow:0 6px 15px rgba(0,0,0,.2);
+  transition:.3s;
+}
+
+.next-btn:hover{
+  transform:translateX(-50%) scale(1.08);
+}
+
+.hidden{
+  opacity:0;
+  pointer-events:none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap");
+.nama-ultah2{
+  position: absolute;
+  font-family: 'Nunito', sans-serif;
+  right: 300px;
+  font-size: 55px;
+  bottom: 500px;
+  color: #333;
+}
+
+.pap{
+  opacity:0;
+  transform:scale(.5);
+  transition:all .4s ease;
+}
+
+.pap.show{
+  opacity:1;
+  transform:scale(1);
+}
+
+
+/* ==== SLIDE 5 MUSIC ==== */
+.music-layout{
+  width:90%;
+  max-width:1200px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin:auto;
+  height:100%;
+}
+
+.cake{ 
+position: absolute;
+width: 550px; 
+left: -115px;
+bottom: -80px;
+}
+
+.right-section{
+text-align:center; 
+max-width:420px; 
+}
+
+.title{ 
+font-size:32px; 
+margin-bottom:20px; 
+}
+
+.polaroid{
+  width:260px;              /* BATASI ukuran */
+  padding:12px;
+  border-radius:18px;
+  background:white;
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+  margin:0 auto 20px auto;  /* bikin dia tetap center */
+}
+
+.polaroid img{
+  width:100%;
+  height:300px;             /* biar proporsional */
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.polaroid p{
+  font-size:14px;
+  margin-top:8px;
+}
+
+
+.player{
+  width:320px;
+  position:absolute;
+  left: 500px;
+  bottom: 250px;
+  transform:translateX(-50%);
+  margin-top:20px;
+  background:#111;
+  padding:18px;
+  border-radius:20px;
+  color:white;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+
+.song{
+  font-weight:bold;
+  font-size:16px;
+}
+
+.artist{
+  font-size:14px;
+  opacity:.7;
+  margin-bottom:10px;
+}
+
+.progress-bar{
+  width: 100%;
+  height: 6px;
+  background: #ffffff30;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-fill{
+  height: 100%;
+  width: 0%;
+  background: white;
+  transition: width 0.1s linear;
+}
+
+.play-btn{
+  background:#1db954;
+  border:none;
+  padding:12px 18px;
+  border-radius:50%;
+  font-size:18px;
+  cursor:pointer;
+}
+
+#confetti{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+
+.confetti{
+  position:absolute;
+  width:10px;
+  height:10px;
+  animation:fall linear forwards;
+}
+
+.penutup{
+  position: absolute;
+  width: 200px;
+  right: 290px;
+  bottom: 360px;
+  transform: rotate(-220deg) scale(-1);
+  z-index: 2;
+}
+
+.scribb{
+  position: absolute;
+  width: 200px;
+  right: 790px;
+}
+
+.serulah{
+  position: absolute;
+  width: 250px;
+  right: 450px;
+  bottom: 320px;
+  transform: rotate(-135deg) scale(-1);
+}
+
+@keyframes fall{
+  from{transform:translateY(-10vh) rotate(0);}
+  to{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* ================= SLIDE 6 GAME ================= */
+
+#slide6{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.game-box{
+  max-width:700px;
+}
+
+.game-title{
+  font-size:48px;
+  color:#ff4da6;
+  margin-bottom:10px;
+}
+
+.game-desc{
+  margin-bottom:25px;
+  color:#555;
+}
+
+/* WORD GRID */
+.word-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:14px;
+  min-height:200px;
+}
+
+.word-btn{
+  padding:14px 22px;
+  border:none;
+  border-radius:14px;
+  background:#ffe6f0;
+  color:#ff4da6;
+  font-weight:bold;
+  opacity:0;
+  transform:translateY(25px);
+  transition:.4s;
+}
+
+.word-btn.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+.word-btn.wrong{
+  animation:shake .35s;
+}
+
+@keyframes shake{
+  25%{transform:rotate(8deg)}
+  50%{transform:rotate(-8deg)}
+  75%{transform:rotate(6deg)}
+}
+
+/* DATE PICKER */
+.date-form{ display:none; margin-top:25px; }
+
+.date-picker{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+  margin:15px 0;
+}
+
+.date-btn{
+  width:45px;
+  height:45px;
+  border-radius:50%;
+  border:none;
+  background:#ffe6f0;
+  color:#ff4da6;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.date-btn.selected{
+  background:#ff4da6;
+  color:white;
+  transform:scale(1.2);
+}
+
+.confirm-btn{
+  padding:12px 25px;
+  border:none;
+  border-radius:20px;
+  background:#ff4da6;
+  color:white;
+  cursor:pointer;
+}
+
+/* ================= PRINTER ================= */
+
+#ticketPrinter{
+  position:fixed;
+  inset:0;
+  background:#ffeaf4;
+  display:none;
+  justify-content:center;
+  align-items:flex-start;   /* dari center → atas */
+
+  padding-top:90px;         /* tinggi geseran */
+  z-index:9999;
+}
+
+
+#ticketPrinter.active{
+  display:flex;
+}
+
+/* PRINTER BODY */
+.printer{
+  position:relative;
+  width:300px;
+  height:120px;
+  border-radius:22px;
+  background:linear-gradient(180deg,#ff6aa5,#ff3f92);
+  box-shadow:0 25px 50px rgba(0,0,0,.25);
+}
+
+.printer-slot{
+  position:absolute;
+  top:35px;
+  left:50%;
+  transform:translateX(-50%);
+  width:230px;
+  height:48px;
+  background:#111;
+  border-radius:14px;
+  box-shadow:inset 0 -8px 14px rgba(0,0,0,.8);
+  z-index:10;
+}
+
+.printer::after{
+  content:"";
+  position:absolute;
+  bottom:18px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80px;
+  height:8px;
+  background:#ff9cc6;
+  border-radius:10px;
+  opacity:.6;
+}
+
+
+/* VIEWPORT (yang buka) */
+.paper-viewport{
+  position:absolute;
+  top:145px;       /* slot top + height */
+  left:50%;
+  transform:translateX(-50%);
+  width:520px;
+  height:0;
+  overflow:hidden;
+  transition:height 2.2s cubic-bezier(.22,.61,.36,1);
+}
+
+
+
+.paper-viewport.print{
+  height:380px; /* panjang tiket keluar */
+}
+
+
+/* TICKET CARD */
+/* ===== REAL TICKET DESIGN ===== */
+
+.paper{
+  width:520px;
+  background:#fff;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 30px 80px rgba(0,0,0,.18);
+  font-family:'Inter',sans-serif;
+}
+
+/* layout */
+.ticket-main{
+  display:flex;
+}
+
+/* LEFT STUB */
+.stub{
+  width:150px;
+  background:#111;
+  color:white;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  position:relative;
+}
+
+/* lubang sobekan */
+.stub::after{
+  content:"";
+  position:absolute;
+  right:-9px;
+  top:0;
+  width:18px;
+  height:100%;
+  background:
+    radial-gradient(circle at 0 12px,#fff 9px,transparent 10px) repeat-y;
+  background-size:18px 26px;
+}
+
+.stub-top{
+  font-size:12px;
+  letter-spacing:2px;
+  opacity:.7;
+}
+
+.stub-name{
+  font-size:22px;
+  font-weight:700;
+}
+
+.stub-date{
+  font-size:14px;
+  opacity:.9;
+}
+
+.stub-seat{
+  font-size:12px;
+  opacity:.7;
+}
+
+.stub-code{
+  font-size:11px;
+  opacity:.5;
+}
+
+/* RIGHT CONTENT */
+.content{
+  flex:1;
+  padding:20px;
+}
+
+/* header */
+.top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:18px;
+}
+
+.route{
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:2px;
+}
+
+.pass{
+  font-size:12px;
+  letter-spacing:2px;
+  opacity:.6;
+}
+
+/* middle */
+.middle{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+
+.ticket-photo{
+  width:120px;
+  height:140px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+.details{
+  flex:1;
+}
+
+.row{
+  margin-bottom:12px;
+}
+
+.row label{
+  display:block;
+  font-size:10px;
+  letter-spacing:1px;
+  opacity:.5;
+}
+
+.row b{
+  font-size:16px;
+}
+
+/* bottom */
+.bottom{
+  display:flex;
+  justify-content:flex-end;
+  margin-top:18px;
+}
+
+#qrcode{
+  background:#f4f4f4;
+  padding:8px;
+  border-radius:8px;
+}
+
+.printer{
+  position:relative;
+  width:1000px;      /* tambah lebar */
+  height:240px;
+  border-radius:36px;
+  background:linear-gradient(180deg,#ff6aa5,#ff3f92);
+  box-shadow:0 40px 90px rgba(0,0,0,.28);
+  display:flex;
+  justify-content:center;
+}
+
+.printer-slot{
+  position:absolute;
+  top:110px;
+  left:50%;
+  transform:translateX(-50%);
+  width:700px;     /* ← DIPANJANGIN */
+  height:60px;     /* dikit lebih tebal */
+  background:#111;
+  border-radius:22px;
+  box-shadow:
+    inset 0 -10px 18px rgba(0,0,0,.8),
+    0 6px 14px rgba(0,0,0,.3);
+}
+
+.printer-slot::after{
+  content:"";
+  position:absolute;
+  bottom:8px;
+  left:50%;
+  transform:translateX(-50%);
+  width:85%;
+  height:6px;
+  background:rgba(255,255,255,.08);
+  border-radius:10px;
+}
+
+
+/* efek mesin nyala */
+.printer.printing{
+  animation: printerShake .18s linear infinite;
+}
+
+@keyframes printerShake{
+  0%{ transform:translateX(0) }
+  25%{ transform:translateX(0.8px) }
+  50%{ transform:translateX(-0.8px) }
+  75%{ transform:translateX(0.5px) }
+  100%{ transform:translateX(0) }
+}
+
+#backBtn{
+position:fixed;
+bottom:40px;
+left:50%;
+transform:translateX(-50%);
+padding:14px 30px;
+background:#ff4fa3;
+color:white;
+border:none;
+border-radius:12px;
+font-size:16px;
+font-weight:bold;
+cursor:pointer;
+display:none;
+z-index:9999;
+}
+
+
+/* ===== CLICK FIX ===== */
+.slide{
+  pointer-events: none;
+}
+
+.slide.active{
+  pointer-events: auto;
+}
+
+.center-text,
+.center-text *,
+.next-btn,
+.next-btn *,
+.card,
+.card *{
+  pointer-events: auto;
+}
+
+/* pastikan UI selalu di atas */
+.center-text,
+.next-btn,
+.card{
+  position: relative;
+  z-index: 9999;
+}

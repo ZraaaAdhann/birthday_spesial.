@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="slider">
+      <!-- ===== SLIDE 1 ===== -->
+      <div class="slide active" id="slide1">
+        <img src="img/banner.png" class="banner" />
+        <img src="img/banner1.png" class="banner1" />
+        <img src="img/banner2.png" class="banner2" />
+        <img src="img/banner3.png" class="banner3" />
+
+        <img src="img/char1.png" class="char left" />
+        <img src="img/char2.png" class="char bottom" />
+        <img src="img/char3.png" class="char right" />
+        <img src="img/char4.png" class="char right2" />
+
+        <div class="center-text">
+          <h1>Happy<br />Birthday</h1>
+          <button onclick="goNext()">Time to Make a Wish!</button>
+        </div>
+      </div>
+
+      <!-- ===== SLIDE 2 ===== -->
+      <div class="slide" id="slide2">
+        <img src="img/banner.png" class="banners2" />
+        <img src="img/snoppy_kiri.png" class="kirian" />
+        <img src="img/snoopy_ft.png" class="kananft" />
+        <img src="img/snoopy_kanan.png" class="kananan" />
+
+        <h2 class="sweet">sweet seventeen</h2>
+
+        <div class="photo-wrap">
+          <div class="photo">
+            <img src="img/foto-kecil1.jpeg" />
+            <p>Bocil lucu, imut, dan menggemaskan saat kecil</p>
+          </div>
+
+          <div class="photo">
+            <img src="img/foto-besar1.jpeg" />
+            <p>
+              Tidak ada yang berubah, justru bertumbuh menjadi sosok yang
+              mandiri, kreatif, dan hebat
+            </p>
+          </div>
+        </div>
+
+        <button class="next-btn" onclick="goNext()">Next</button>
+      </div>
+
+      <!-- ===== SLIDE 3 ===== -->
+      <div class="slide" id="slide3">
+        <img src="img/banner.png" class="banners2" />
+        <img src="img/snoopy_ft.png" class="char4" />
+        <img src="img/snopy_slide3.png" class="char5" />
+        <img src="img/char4.png" class="char6" />
+
+        <div class="foto-container">
+          <img src="img/foto-besar2.jpeg" class="foto-style" />
+          <p
+            style="
+              max-width: 250px;
+              text-align: center;
+              margin-top: 490px;
+              margin-right: -890px;
+            "
+          >
+            Tidak ada yang berubah, justru bertumbuh menjadi sosok yang mandiri,
+            kreatif, dan hebat
+          </p>
+        </div>
+
+        <div class="wish-center">
+          <h2 class="nama-ultahun">
+  Liana Sabirah
+</h2>
+
+          <p class="p-ucapan">
+            <span id= "typingText">
+            HYYYYYY, Selamaatt ulang tahunn Liana Sabirah..., Yeaayy sekarangg
+            udahh ndaakk bocill lgiii, udaahh legaall nihh hihii✨✨🥳. selamaat
+            ulang tahunn ke 17 Liaaaa, semogaa panjangg umurr, sehaatt selaluu,
+            dan apaa yang kamuu mimpiikan semogaa terwujudd semuaa. semogaa
+            keberkahan selaluu membersamaii kamuuu. Teteep senyuumm yyaaaa,
+            haruuss haappyy di sweet seventeen inii... sekalii lagii selamaatt
+            ulang tahuunn sayangg, teruss berkembangg yyaa buatt kedepaannyaa,
+            wish youu all the best!!! 🥳🥳🎂🎂
+            </span> <span class="cursor">|</span>
+          </p>
+          <button class="next-center" onclick="goNext()">Next</button>
+        </div>
+      </div>
+      <!--=====SLIDE 4=====-->
+      <div class="slide" id="slide4">
+        <img src="img/banner.png" class="banners2" />
+        <img src="img/banner3.png" class="banners3" />
+        <h2 class="nama-ultah2">YOUR BEATIFUL PHOTOS</h2>
+
+        <div class="pap-wrap">
+          <img src="img/pap1.jpeg" class="pap" />
+          <img src="img/pap2,.jpeg" class="pap" />
+          <img src="img/pap3.jpeg" class="pap" />
+          <img src="img/pap4.jpeg" class="pap" />
+          <img src="img/pap5.jpeg" class="pap" />
+          <img src="img/pap6.jpeg" class="pap" />
+          <img src="img/pap7.jpeg" class="pap" />
+          <img src="img/pap8.jpeg" class="pap" />
+          <img src="img/pap11.jpeg" class="pap" />
+          <img src="img/pap12.jpeg" class="pap" />
+        </div>
+        <button class="next-tmbl" onclick="goNext()">Next</button>
+      </div>
+
+      <!-- ===== SLIDE 5 — MUSIC ===== -->
+      <div class="slide" id="slide5">
+        <img src="img/banner.png" class="banners2" />
+        <img src="img/hattt.png" class="penutup" />
+        <img src="img/hansap.png" class="scribb" />
+        <img src="img/seru.png" class="serulah" />
+
+        <div class="music-layout">
+          <div class="left-section">
+            <img src="img/snopy_slide3.png" class="cake" />
+          </div>
+
+          <div class="right-section">
+            <h2 class="title">HAPPY SWEET SEVENTEEN!!</h2>
+
+            <div class="polaroid">
+              <img src="img/pap12.jpeg" />
+              <p>My Love ❤️</p>
+            </div>
+
+            <div class="player">
+              <div class="song">ONE ONLY</div>
+              <div class="artist">Pamungkas</div>
+
+              <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+
+              <button class="play-btn" onclick="toggleMusic()">▶</button>
+
+              <audio id="audio">
+                <source src="asset/audio/lagu.mp3" type="audio/mpeg" />
+              </audio>
+            </div>
+
+            <p class="message">
+              "Selamat ulang tahun, sayang. Semoga hari ini seindah senyummu dan
+              cintaku selalu jadi hadiah terbaik untukmu."
+            </p>
+            <button class="next-tmbl" onclick="goNext()">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="confetti"></div>
+
+      <!-- ===== SLIDE 6 : SECRET GAME ===== -->
+      <div class="slide" id="slide6">
+        <div class="game-box">
+          <h2 class="game-title">Cari Kata Rahasia</h2>
+          <p class="game-desc">
+            Di antara kata ini ada hadiah 🎁<br />
+            Temukan kata spesialnya ❤️
+          </p>
+
+          <div class="word-grid" id="wordGrid"></div>
+
+          <div class="date-form" id="dateForm">
+            <p id="dateTitle">YEEAAYY BENAARR, Pilih tanggal meet kita!!!</p>
+            <div class="date-picker" id="datePicker"></div>
+            <button id="confirmBtn" class="confirm-btn">Confirm ❤️</button>
+          </div>
+        </div>
+
+        <div id="ticketPrinter">
+          <div class="printer">
+            <!-- SLOT PRINTER (bagian hitam) -->
+            <div class="printer-slot"></div>
+
+            <!-- AREA KELUAR KERTAS -->
+            <div class="paper-exit">
+              <!-- JENDELA YANG TERBUKA -->
+              <div class="paper-viewport">
+                <!-- TIKET (DIAM) -->
+                <div id="ticket" class="paper">
+                  <div class="ticket-main">
+                    <!-- LEFT STUB -->
+                    <div class="stub">
+                      <div class="stub-top">MEET PASS</div>
+                      <div class="stub-name">Liana</div>
+                      <div class="stub-date" id="ticketDate">20 Mei 2026</div>
+                      <div class="stub-seat">SEAT: WITH ME</div>
+                      <div class="stub-code">ILY-FOREVER</div>
+                    </div>
+
+                    <!-- RIGHT CONTENT -->
+                    <div class="content">
+                      <div class="top">
+                        <div class="route">
+                          <span class="from">YOU</span>
+                          <span class="arrow">➜</span>
+                          <span class="to">ME</span>
+                        </div>
+                        <div class="pass">BOARDING PASS</div>
+                      </div>
+
+                      <div class="middle">
+                        <img src="img/papp.jpeg" class="ticket-photo" />
+
+                        <div class="details">
+                          <div class="row">
+                            <label>NAME</label>
+                            <b>Liana Sabirah</b>
+                          </div>
+
+                          <div class="row">
+                            <label>DATE</label>
+                            <b id="ticketDate2">20 Mei 2026</b>
+                          </div>
+
+                          <div class="row">
+                            <label>GATE</label>
+                            <b>HEART</b>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="bottom">
+                        <div id="qrcode"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- END TIKET -->
+              </div>
+              <!-- END VIEWPORT -->
+            </div>
+            <!-- END PAPER EXIT -->
+          </div>
+        </div>
+        <button id="backBtn" style="display:none;">Back to Start</button>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
